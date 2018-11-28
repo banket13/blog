@@ -1,0 +1,22 @@
+<section>
+    <table style="border-collapse: collapse;">
+        <thead>
+            
+            <th>Nom</th>
+            <th>Prénom </th>
+            <th>pseudo</th>
+            <th>role</th>
+            
+        </thead>
+        <tbody>
+            <?php foreach($auteurs as $auteur):?>
+                <tr>
+                    <td style="border: 1px solid black;"><?=$auteur['user_nom']?></td>
+                    <td style="border: 1px solid black;"><?=$auteur['user_prenom']?></td>
+                    <td style="border: 1px solid black;"><?=$auteur['user_pseudo']?></td>
+                    <td style="border: 1px solid black;"><?=$auteur['user_role']?></td>
+                    <td><a href="listUser.php?id=<?=$auteur['user_id']?>"><?=$auteur['user_id']?></a></td>
+            <?php endforeach;?>
+        </tbody>
+    </table>
+</section>
