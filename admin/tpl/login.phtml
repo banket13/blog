@@ -1,9 +1,12 @@
+<?php if($erreur):?><p><?=$erreur;?></p><?php endif;?>
+
+
 <form action="login.php" method="POST">
 
     <label for="email">email</label>
     <input type="text" name="email" id="email">
 
-    <label for="password">mot de pase</label>
+    <label for="password">mot de passe</label>
     <input type="text" name="password" id="password">
 
     <input type="submit" value="envoyer">

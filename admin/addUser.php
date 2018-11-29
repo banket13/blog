@@ -1,9 +1,9 @@
 <?php
-
+session_start();
 include('../config/config.php');
 include('../lib/bdd.lib.php');
 
-
+identification();
 
 $vue='addUser.phtml';
 $title="nouvel utilisateur";

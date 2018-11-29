@@ -6,12 +6,11 @@ include('../lib/bdd.lib.php');
 
 identification();
 
+session_unset();
 
-$vue='index.phtml';
-$title = 'Dashboard';
+
+$vue='logOut.phtml';
+$title = 'logout';
 
 
 include('tpl/layout.phtml');
-
-
-

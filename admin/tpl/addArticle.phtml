@@ -1,0 +1,33 @@
+
+
+
+<?php if($erreur):?><p><?=$erreur;?></p><?php endif;?>
+
+
+
+<form action="addArticle.php" method="POST"  enctype="multipart/form-data">
+
+    <label for="titre">Titre</label>
+    <input type="text" name="titre" id="titre" value="<?= $values['titre'];?>">
+    <br>
+
+
+    <label for="article">Article</label>
+    <textarea name="article" id="article" cols="30" rows="10"><?= $values['article'];?></textarea>
+    <br>
+
+    <label for="tag">Mots clé</label>
+    <textarea name="tag" id="tag" cols="30" rows="10"><?= $values['tag'];?></textarea>
+    <br>
+
+    <input type="date" name="date" id="date">
+    <br>
+
+    <label for="picture">piece jointe</label>
+    <input type="file" name="picture" id="picture">
+    <input type="submit" value="envoyer">
+
+
+
+
+</form>

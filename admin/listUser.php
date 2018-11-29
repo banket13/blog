@@ -1,9 +1,10 @@
 <?php
-
+session_start();
 include('../config/config.php');
 include('../lib/bdd.lib.php');
 
 
+identification();
 
 $vue='listUser.phtml';
 $title='liste utilisateur';

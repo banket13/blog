@@ -8,3 +8,12 @@ function connexion()
 
     return $dbh;
 }
+
+
+function identification(){
+    if(!isset($_SESSION['connect']) || $_SESSION['connect'] != true)
+    {
+        header('Location:login.php');
+        exit();
+    }
+}
